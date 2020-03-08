@@ -801,10 +801,13 @@ function initMap() {
  var uluru = {lat: 43.030800, lng: -81.274176};
  // The map, centered at Uluru
  var map = new google.maps.Map(
-     document.getElementById('map'), {zoom: 4, center: uluru});
+     document.getElementById('map'), {zoom: 18, center: uluru});
  // The marker, positioned at Uluru
- var marker = new google.maps.Marker({position: uluru, map: map});
+ var marker = new google.maps.Marker({position: uluru, map: map, title: '39 Shawna Road, London ON N5X3G9'});
 }
+
+marker.setMap(map);
+
    </script>
    <script async defer
    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTvLvNTDR3rMwOKg0RqBoZ9lEVEd4HVbs&callback=initMap">
@@ -816,6 +819,9 @@ function initMap() {
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
+
+
+
 
             <p>
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
